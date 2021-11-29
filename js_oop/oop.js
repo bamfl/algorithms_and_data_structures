@@ -42,12 +42,12 @@ class Employee extends Human {
   }
 }
 
-const accountant = new Employee('Eugen', 1968, 'Door fitter');
-console.log(accountant);
-console.log(accountant.name);
-console.log(accountant.age);
-accountant.name = 'Marina';
-console.log(accountant);
+const fitter = new Employee('Eugen', 1968, 'Door fitter');
+console.log(fitter);
+console.log(fitter.name);
+console.log(fitter.age);
+fitter.name = 'Marina';
+console.log(fitter);
 
 // Полимофризм - разное результат работы одинаковых функций, здесь метода greeting
 class Programmer {
@@ -58,5 +58,5 @@ class Programmer {
 
 const programmer = new Programmer();
 
-const people = [human, accountant, programmer];
+const people = [human, fitter, programmer];
 people.forEach(person => console.log(person.greeting()));
